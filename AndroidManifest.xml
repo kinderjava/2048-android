@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.uberspot.a2048"
     android:versionCode="19"
-    android:versionName="1.96" >
+    android:versionName="1.98" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -24,6 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="3b45906ed74d5f53fc4bc5b006a2ec251e7672fc" />
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
