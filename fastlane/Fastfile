@@ -33,6 +33,7 @@ platform :android do
     properties: {
       'versionCode' => ENV['ANDROID_VERSIONCODE'],
       'versionName' => ENV['ANDROID_VERSIONNAME'],
+      'applicationName' => ENV['ANDROID_APPLICATIONAME']
       # ...
     },
 
@@ -41,7 +42,7 @@ platform :android do
 
     notify = true
     notes = "Merkinsio Upload"
-    build_path = "/home/jmhidalgo/MERKINS/ANDROID/2048-android/build/outputs/apk/2048-android-debug.apk"
+    build_path = "../build/outputs/apk/#{ENV['ANDROID_APPLICATIONAME']}_#{ENV['ANDROID_VERSIONNAME']}-debug.apk"
 
     tags = "merkinsio"
 
